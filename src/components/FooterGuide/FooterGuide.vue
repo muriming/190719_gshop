@@ -1,30 +1,39 @@
 <template>
-  <footer class="footer_guide">
+  <footer class="footer_guide"> 
+<!-- 第一部分 -->
     <span class="guide_item" :class="{on: '/msite'===$route.path}" @click="goto('/msite')">
       <span>
         <i class="iconfont icon-waimai"></i>
       </span>
       <span>{{$t('footer_home')}}</span>
     </span>
+<!-- 第二部分 -->
+
     <span class="guide_item" :class="{on: '/search'===$route.path}" @click="goto('/search')">
       <span>
         <i class="iconfont icon-search"></i>
       </span>
       <span>{{$t('footer_search')}}</span>
     </span>
+<!-- 第三部分 --> 
+
     <span class="guide_item" :class="{on: '/order'===$route.path}" @click="goto('/order')">
       <span>
         <i class="iconfont icon-dingdan"></i>
       </span>
       <span>{{$t('footer_order')}}</span>
     </span>
+<!-- 第四部分 -->
+
     <span class="guide_item" :class="{on: '/profile'===$route.path}" @click="goto('/profile')">
       <span class="item_icon">
         <i class="iconfont icon-geren"></i>
       </span>
       <span>{{$t('footer_own')}}</span>
     </span>
+
   </footer>
+
 </template>
 
 <script type="text/ecmascript-6">
